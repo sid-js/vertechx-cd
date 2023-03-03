@@ -1,10 +1,11 @@
 
 var countDownDate = new Date("March 28, 2023 00:00:00").getTime();
 
-const daytext = document.getElementById("day")
-const hourtext = document.getElementById("hour")
-const minutetext = document.getElementById("minute")
-const secondtext = document.getElementById("second");
+
+let daytext = document.getElementById("daytext");
+let hourtext = document.getElementById("hourtext");
+let minutetext = document.getElementById("minutetext");
+let secondtext = document.getElementById("secondtext");
 
 
 
@@ -19,12 +20,9 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   daytext.innerHTML= days;
-  hourtext.innerHTML
+  hourtext.innerHTML = hours;
+  minutetext.innerHTML = minutes;
 
   
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
 }, 1000);
