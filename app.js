@@ -22,6 +22,7 @@ var x = setInterval(function() {
   daytext.innerHTML= days;
   hourtext.innerHTML = hours;
   minutetext.innerHTML = minutes;
+  secondtext.innerHTML = seconds;
 
   
 
