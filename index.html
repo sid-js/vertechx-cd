@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VertechX</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        grotesk: ['Space Grotesk', 'sans-serif']
+                    }
+
+                }
+            }
+        }
+
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .ls {
+                letter-spacing: 0.9rem;
+            }
+            .ls-1 {
+                letter-spacing: 0.6rem;
+            }
+            .number{
+                @apply text-9xl
+            }
+
+            .label{
+                @apply text-2xl
+            }
+        }
+    </style>
+</head>
+
+<body class=" font-grotesk bg-[url('./images/space.jpg')] bg-no-repeat bg-cover h-screen">
+
+    <header class=" w-full h-full flex justify-center items-center flex-col">
+        <img class="w-1/2" src="./images/logo.png" alt="">
+        <div class="my-7">
+            <h2 class="text-white text-2xl font-light ls">COMING SOON</h2>
+        </div>
+
+        <section class="timer-container flex flex-row gap-10 text-white py-16">
+            <div class="flex flex-col text-center   ">
+                <span class="number" id="daytext">28</span>
+                <span class="label">DAYS</span>
+            </div>
+            <div class="flex flex-col text-center   ">
+                <span class="number">:</span>
+            </div>
+            <div class="flex flex-col text-center   ">
+                <span class="number" id="hourtext">05</span>
+                <span class="label">HOURS</span>
+            </div>
+            <div class="flex flex-col text-center   ">
+                <span class="number">:</span>
+            </div>
+            <div class="flex flex-col text-center   ">
+                <span class="number" id="minutetext">36</span>
+                <span class="label">MINUTES</span>
+            </div>
+            <div class="flex flex-col text-center   ">
+                <span class="number">:</span>
+            </div>
+            <div class="flex flex-col text-center   ">
+                <span class="number" id="secondtext">36</span>
+                <span class="label">SECONDS</span>
+            </div>
+
+
+        </section>
+
+
+        <a class="flex justify-center items-center gap-8 text-white ls absolute bottom-10 group"
+            href="https://www.instagram.com/vertechx/">
+            <img class="w-8" src="./images/vertechx-instagram.svg" alt="">
+            <span class="ls-1 group-hover:ls transition-all duration-300">VERTECHX</span>
+        </a>
+
+
+
+
+    </header>
+
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+
+</html>
