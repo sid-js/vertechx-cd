@@ -52,7 +52,7 @@
 
 <body class="box-border font-grotesk bg-no-repeat bg-cover w-screen h-screen">
     <canvas id="canvas" class="object-cotain w-full h-full"></canvas>
-    <header class="w-full h-full flex justify-center items-center flex-col absolute top-0">
+    <header class="w-full h-full flex justify-center items-center flex-col absolute">
         <div class="w-[85%] md:w-1/2 hover:scale-105 transition duration-300">
             <svg width="100%" height="100%" viewBox="0 0 3795 799" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M915.868 716.729L732.015 396.982L811.691 258.484L915.868 439.483V716.729Z" fill="white"
@@ -106,18 +106,17 @@
                     fill="white" class="svg-elem-16"></path>
             </svg>
         </div>
-        <div class="my-7">
+        <div class="py-4">
             <h2
-                class="text-white text-xs text-center md:text-2xl font-light bg-black blur-lg p-3 md:bg-transparent rounded-lg bg-opacity-30 backdrop-blur-sm ls-2 md:ls-1 focus-in-contract-bck ">
-                REGISTRATIONS
-                OPENING SOON
+                class="text-white text-xs text-center md:text-2xl font-light bg-black blur-lg p-3 md:bg-transparent rounded-lg bg-opacity-30 backdrop-blur-sm ls-2 focus-in-contract-bck ">
+                REGISTRATIONS OPENING SOON
             </h2>
         </div>
 
 
 
         <section id="countdown"
-            class="timer-container flex flex-row gap-2 text-white py-4 md:py-16 px-14 w-4/5 justify-center fade-in-bottom">
+            class="timer-container flex flex-row gap-2 text-white py-4 md:py-8 px-14 w-4/5 justify-center fade-in-bottom">
             <div class="flex flex-col text-center">
                 <span class="number number-w" id="daytext">28</span>
                 <span class="label">DAYS</span>
@@ -147,29 +146,32 @@
 
         </section>
 
-        <div class="flex justify-center items-center gap-4
-        absolute bottom-40 md:bottom-10 ">
-            <div>
-                <a class="flex justify-center items-center gap-4 text-white ls  group"
-                    href="https://www.instagram.com/vertechx/">
-                    <img class="w-8" src="./images/vertechx-instagram.svg" alt="">
-                    <span class="ls-2 group-hover:ls transition-all duration-300 hidden md:inline">VERTECHX</span>
-                </a>
+        <div class="flex flex-col justify-center items-center gap-4 mt-16 md:mt-2 focus-in-contract-bck">
+            <div class="flex flex-row justify-center items-center gap-6 py-3">
+                <div class="group">
+                    <a class="flex justify-center items-center gap-4 text-white ls"
+                        href="https://www.instagram.com/vertechx/">
+                        <img class="w-8" src="./images/vertechx-instagram.svg" alt="">
+                        <span class="ls-2 group-hover:ls transition-all duration-300 hidden md:inline">INSTAGRAM</span>
+                    </a>
+                </div>
+                <div class="">
+                    <a class="flex justify-center items-center gap-4 text-white ls  group cursor-pointer"
+                        href="https://www.youtube.com/@vertechxofficial8784">
+                        <img class="w-10 group-hover:scale-105 transition duration-200" src="./images/vertechx-youtube.svg" alt="">
+                        <span class="ls-2 group-hover:ls-1 transition-all duration-300 hidden md:inline">YOUTUBE</span>
+                    </a>
+                </div>
             </div>
-            <div>
-                <a class="flex justify-center items-center gap-4 text-white ls  group"
-                    href="https://www.youtube.com/@vertechxofficial8784">
-                    <img class="w-10" src="./images/vertechx-youtube.svg" alt="">
-                    <span class="ls-2 group-hover:ls-1 transition-all duration-300 hidden md:inline">VERTECHX
-                        OFFICIAL</span>
-                </a>
-            </div>
+            
+            <img class="md:left-0 w-36 md:w-48 md:hidden" src="./images/mvj-logo.svg" alt="">
         </div>
-
-        <img class="absolute bottom-5 md:bottom-3  md:left-0 w-32 md:w-48" src="./images/mvj-logo.svg" alt="">
+        <img class="absolute left-0 bottom-0 w-56 hidden md:block" src="./images/mvj-logo.svg" alt="">
+        
 
 
     </header>
+    
     <script src="./app.js" type="text/javascript"></script>
 </body>
 
